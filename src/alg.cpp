@@ -24,18 +24,18 @@ return num;
 }
 
 uint64_t nextPrime(uint64_t value) {
- int num = ++value;
-  while (!checkPrime(num)) {
-    num++;
-  }
-  return num;
+int num = ++value;
+while (!checkPrime(num)) {
+  num++;
+}
+return num;
 }
 
 uint64_t sumPrime(uint64_t hbound) {
- uint64_t sum = 0;
-  for (int num = 2; num < hbound; num++) {
-    if (checkPrime(num))
-      sum += num;
+uint64_t sum = 0;
+for (int num = 2; num < hbound; num++) {
+  if (checkPrime(num))
+    sum += num;
   }
   return sum;
 }
